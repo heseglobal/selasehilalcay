@@ -1,0 +1,442 @@
+<!DOCTYPE html><html class="dark scroll-smooth" lang="tr"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#0d241c",
+                      "primary-container": "#1b3b2f",
+                      "surface-dim": "#021710",
+                      "on-tertiary-fixed": "#301311",
+                      "inverse-on-surface": "#1f352c",
+                      "on-tertiary-container": "#c2928e",
+                      "on-primary": "#16362a",
+                      "on-secondary-fixed": "#1d1b16",
+                      "surface-tint": "#abcebd",
+                      "secondary-fixed": "#e7e2d9",
+                      "surface-container-low": "#091f18",
+                      "on-tertiary-fixed-variant": "#623d3a",
+                      "inverse-surface": "#cfe8dc",
+                      "on-secondary-fixed-variant": "#494640",
+                      "on-primary-fixed": "#002116",
+                      "on-surface": "#cfe8dc",
+                      "primary-fixed-dim": "#abcebd",
+                      "outline-variant": "#414844",
+                      "background": "#021710",
+                      "on-primary-fixed-variant": "#2d4d40",
+                      "on-surface-variant": "#c1c8c3",
+                      "on-error-container": "#ffdad6",
+                      "surface-bright": "#283e35",
+                      "on-secondary-container": "#bdb8af",
+                      "outline": "#8b928e",
+                      "secondary": "#cbc6bd",
+                      "surface-container-highest": "#233930",
+                      "surface-variant": "#233930",
+                      "secondary-container": "#4c4942",
+                      "on-background": "#cfe8dc",
+                      "on-primary-container": "#83a596",
+                      "error": "#ffb4ab",
+                      "surface-container-high": "#182e26",
+                      "on-error": "#690005",
+                      "primary-fixed": "#c7ebd9",
+                      "tertiary-container": "#4e2c29",
+                      "primary": "#abcebd",
+                      "error-container": "#93000a",
+                      "on-tertiary": "#482724",
+                      "inverse-primary": "#456557",
+                      "tertiary-fixed-dim": "#eebab5",
+                      "on-secondary": "#32302a",
+                      "tertiary-fixed": "#ffdad6",
+                      "surface-container-lowest": "#00120b",
+                      "secondary-fixed-dim": "#cbc6bd",
+                      "surface": "#021710",
+                      "tertiary": "#eebab5",
+                      "gold": "#C9A961",
+                      "cream": "#F9F6F0",
+                      "forest": "#0B1F17"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "section-padding": "120px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-xl": [
+                              "Playfair Display"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "72px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      }catch(_e){}</script></head><body class="bg-background text-on-background font-body-md antialiased selection:bg-gold selection:text-surface-container-lowest">
+<!-- TopAppBar -->
+<header class="bg-background/90 dark:bg-background/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-primary/20 dark:border-primary-container flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto left-0 right-0">
+<div class="flex items-center gap-4">
+<span class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-gold tracking-tight">Selase Hilal Çay</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-background/80 hover:text-gold transition-colors font-label-md text-label-md" href="#hikaye">Hikâyemiz</a>
+<a class="text-on-background/80 hover:text-gold transition-colors font-label-md text-label-md" href="#urun">Mayıs Çayı</a>
+<a class="text-on-background/80 hover:text-gold transition-colors font-label-md text-label-md" href="#demleme">Hazırlanış</a>
+<a class="text-gold font-bold border-b-2 border-gold pb-1 font-label-md text-label-md" href="https://www.gardrops.com/selase-hilal-cay-mayis-cayi-6395d73a55094a73-p-51041978-5205225">Sipariş</a>
+</nav>
+<a class="hidden md:flex items-center gap-2 bg-transparent border border-gold text-gold px-6 py-2 rounded hover:bg-gold hover:text-forest transition-all duration-300 font-label-md text-label-md" href="https://wa.me/905318581834" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+            İletişim
+        </a>
+<button class="md:hidden text-gold p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main>
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 bg-forest leaf-pattern overflow-hidden" id="hero">
+<div class="absolute inset-0 bg-gradient-to-b from-forest/50 to-background/90 pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 md:grid-cols-2 gap-gutter relative z-10 py-section-padding">
+<div class="flex flex-col justify-center order-2 md:order-1 space-y-8 reveal active">
+<div class="space-y-4">
+<p class="font-label-md text-label-md text-gold uppercase tracking-widest flex items-center gap-4">
+<span class="w-8 h-[1px] bg-gold"></span>
+                            Premium Harman Siyah Çay
+                        </p>
+<h1 class="font-display-lg text-headline-xl md:text-display-lg text-on-background leading-tight">
+                            Mayıs Çayının <br>
+<span class="text-gold italic font-light">En Seçkin</span> Hali
+                        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md pt-4">
+                            Dem Bu Dem — Selase Hilal Çay. Özenle seçilmiş ilk hasat yapraklarıyla, geleneksel Türk çayı lezzetinin en üst noktası.
+                        </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-8">
+<a class="bg-gold text-forest font-label-md text-label-md px-8 py-4 rounded hover:bg-[#ebd08f] transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(201,169,97,0.15)] hover:shadow-[0_4px_25px_rgba(201,169,97,0.25)] hover:-translate-y-1" href="https://wa.me/905318581834" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                            WhatsApp'tan Sipariş Ver
+                        </a>
+<a class="bg-transparent border border-gold text-gold font-label-md text-label-md px-8 py-4 rounded hover:bg-gold/10 transition-all duration-300 flex items-center justify-center gap-2" href="https://www.gardrops.com/selase-hilal-cay-mayis-cayi-6395d73a55094a73-p-51041978-5205225">Hemen Satın Al <span class="material-symbols-outlined text-[18px]">shopping_cart</span></a>
+</div>
+</div>
+<div class="order-1 md:order-2 flex justify-center items-center relative reveal active">
+<div class="absolute inset-0 bg-gold/5 blur-[100px] rounded-full"></div>
+<img class="w-full max-w-md md:max-w-lg object-contain relative z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD65xZk9UOILUO_IJid9iKNMsf0jBx56GZyqPX0J1Q08RUDhMuSDv7_icMPUpWc4T1PVw4aewyeILrGa7CsXb1xhEZTqiCpslfTmumIC5DctZJsi5C_rT2X-JXoSNl3D_l-B1-PSQ62_9EHOBfxPN5bHNFxj1kLysBczQkcGfHC-3sQurY-uzQ6QxLZZOA67zqxML2NHBT5pPQLqAKhoPYRz_HE4Bdv3ho7fvuzfs2erhE-ciGl00_D1__ibEjGImKRqg">
+</div>
+</div>
+</section>
+<!-- BRAND STORY -->
+<section class="bg-cream text-forest py-section-padding relative overflow-hidden" id="hikaye">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-20 pointer-events-none hidden md:block"><img alt="Selase Hilal Çay Composition" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKhAHslVsUfcn1EMdz0sJw_ZfqUMW-C6Xx7xYpYam_G1YU9V2WNZe3_TocCrYYQ1oaYfiRsAUnCpD-kaL8F_1tURklUWNgDdUuk_oqbsgEekFE9LVrGi0YflTgAcqzTGAfsd5p5ATy6tRczyaBQKR2xCLi_625MXccs_uaF3C4tk40w62fVcoeO6iEofXAaVac9Qz3rCAGmmhqqm4Jv7R-IiBAoz76RvZWTGV3HENVRnDgknwmJNVqxx5hlPXl45xqFw"></div>
+<div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-8 reveal"><div class="mb-8 rounded-xl overflow-hidden shadow-2xl border border-gold/20 max-w-xl mx-auto"><img alt="Selase Hilal Çay Premium" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfeZzcAjs62jgvCFnlZrxq6coGrJ8yAMyi4RIE8IEE16dhZagv0B4kdy3SfyTWjhmkhVtvbrg_SYx1cQx0jFLsvQzK8ECbgf9cVkPiwIJaRTnWg2LY3a6JYHFAbDLJlD4t4aQTJ2YHfe2V90PMiXHua-MdnlSA06bB0BRcrGwy3LsbBaCJOsZjZqfUroIvdnHo5-IYtBYPYKoBhtXoDgQlE093oZMAlT8DtwTMz_yYqGuVVSYHeY0deTC__fL8osEwBg"></div>
+<div class="flex justify-center">
+<span class="material-symbols-outlined text-gold text-4xl">local_cafe</span>
+</div>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-forest">Bu Bizim Hikâyemiz</h2>
+<div class="w-16 h-[1px] bg-gold mx-auto"></div>
+<p class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-forest/80 font-light leading-relaxed italic">
+                    "En güzel çayın nasıl demleneceğini aslında siz daha iyi bilirsiniz. Biz muhabbete eşlik etmek için yanınızdayız."
+                </p>
+<p class="font-body-md text-body-md text-forest/60 max-w-2xl mx-auto pt-4">
+                    Doğu Karadeniz'in yüksek yamaçlarından özenle toplanan ilk hasat yaprakları, kuşaktan kuşağa aktarılan ustalıkla işleniyor. Selase Hilal Çay, sadece bir içecek değil, en derin sohbetlerin eşlikçisi olmak için tasarlandı.
+                </p>
+</div>
+</section>
+<!-- WHY MAY TEA -->
+<section class="bg-surface-dim py-section-padding leaf-pattern relative">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16 space-y-4 reveal">
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-gold">Neden Mayıs Çayı?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">En taze yaprakların sırrı.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Feature 1 -->
+<div class="glass-panel p-10 rounded text-center space-y-6 hover:-translate-y-2 transition-transform duration-500 reveal">
+<div class="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center mx-auto bg-gold/5 text-gold">
+<span class="material-symbols-outlined text-3xl">eco</span>
+</div>
+<h3 class="font-headline-lg text-[24px] text-on-background">İlk Hasat</h3>
+<div class="w-8 h-[1px] bg-gold/30 mx-auto"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Kış uykusundan uyanan çay bitkisinin en taze, filiz halindeki ilk yaprakları. Doğanın uyanışının saf tadı.
+                        </p>
+</div>
+<!-- Feature 2 -->
+<div class="glass-panel p-10 rounded text-center space-y-6 hover:-translate-y-2 transition-transform duration-500 reveal delay-100">
+<div class="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center mx-auto bg-gold/5 text-gold">
+<span class="material-symbols-outlined text-3xl">wb_sunny</span>
+</div>
+<h3 class="font-headline-lg text-[24px] text-on-background">Yoğun Aroma</h3>
+<div class="w-8 h-[1px] bg-gold/30 mx-auto"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Kar suyuyla beslenen toprakların verdiği eşsiz demi ve damakta bıraktığı kalıcı lezzet profili.
+                        </p>
+</div>
+<!-- Feature 3 -->
+<div class="glass-panel p-10 rounded text-center space-y-6 hover:-translate-y-2 transition-transform duration-500 reveal delay-200">
+<div class="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center mx-auto bg-gold/5 text-gold">
+<span class="material-symbols-outlined text-3xl">nature</span>
+</div>
+<h3 class="font-headline-lg text-[24px] text-on-background">%100 Doğal Siyah Çay</h3>
+<div class="w-8 h-[1px] bg-gold/30 mx-auto"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Hiçbir katkı maddesi veya koruyucu içermez. Sadece Doğu Karadeniz'in doğasından gelen saf siyah çay yaprakları.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- PRODUCT DETAIL -->
+<section class="bg-background py-section-padding" id="urun">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="relative flex justify-center reveal">
+<div class="absolute inset-0 bg-gold/5 blur-[80px] rounded-full w-3/4 h-3/4 m-auto"></div>
+<img class="w-full max-w-md relative z-10 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdunKrGCSbo2hhXnvfo5FmJjHwZSwOZw1ItUHjId79ZAa_L2aVsnhMjNkrur5ZrYF1s6dgCGGJ8pghoMprDuCNLzNfvIKlmaWhwyIRNxDMPyVTwaN3Vii4lXFjYsvldCZI9vgxRWn7rDD27Kxf7-B33l9kgMrY3LDmdtiXpTlHBhP4UZHDjLin9F96FrMtHwKoQEW3xM1_FUGWiGfqhLf1vf7GTuWlIfdT7yYNNsh2cy32RS1wPY8GRtjInVNOPw6VLA">
+</div>
+<div class="space-y-10 reveal">
+<div class="space-y-4">
+<h2 class="font-display-lg text-headline-xl md:text-display-lg text-gold leading-tight">Selase Hilal Çay</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant uppercase tracking-widest text-sm">Premium Harman</p>
+</div>
+<div class="grid grid-cols-2 gap-8 py-6 border-y border-gold/20">
+<div>
+<span class="block font-label-md text-label-md text-on-surface-variant/60 uppercase">Net Miktar</span>
+<span class="block font-headline-lg text-2xl text-on-background mt-1">500g e</span>
+</div>
+<div>
+<span class="block font-label-md text-label-md text-on-surface-variant/60 uppercase">İçindekiler</span>
+<span class="block font-headline-lg text-2xl text-on-background mt-1">Siyah Çay</span>
+</div>
+<div class="col-span-2">
+<span class="block font-label-md text-label-md text-on-surface-variant/60 uppercase">Menşei</span>
+<span class="block font-headline-lg text-xl text-on-background mt-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-gold">location_on</span>
+                                Türkiye (Doğu Karadeniz)
+                            </span>
+</div>
+</div>
+<!-- Nutritional Info -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-gold uppercase tracking-widest">Enerji ve Besin Öğeleri <span class="text-xs text-on-surface-variant/50 normal-case ml-2">(100g demlenmiş çay için)</span></h4>
+<div class="text-on-surface-variant font-body-md text-sm border border-gold/20 rounded overflow-hidden">
+<div class="flex justify-between p-3 border-b border-gold/10 hover:bg-white/5 transition-colors">
+<span class="">Enerji (kcal/kj)</span>
+<span class="font-semibold">1 / 4</span>
+</div>
+<div class="flex justify-between p-3 border-b border-gold/10 hover:bg-white/5 transition-colors">
+<span class="">Yağ (g)</span>
+<span class="font-semibold">0.0</span>
+</div>
+<div class="flex justify-between p-3 border-b border-gold/10 hover:bg-white/5 transition-colors">
+<span class="pl-4 text-on-surface-variant/70">- Doymuş Yağ (g)</span>
+<span class="font-semibold">0.0</span>
+</div>
+<div class="flex justify-between p-3 border-b border-gold/10 hover:bg-white/5 transition-colors">
+<span class="">Karbonhidrat (g)</span>
+<span class="font-semibold">0.2</span>
+</div>
+<div class="flex justify-between p-3 border-b border-gold/10 hover:bg-white/5 transition-colors">
+<span class="pl-4 text-on-surface-variant/70">- Şeker (g)</span>
+<span class="font-semibold">0.0</span>
+</div>
+<div class="flex justify-between p-3 border-b border-gold/10 hover:bg-white/5 transition-colors">
+<span class="">Protein (g)</span>
+<span class="font-semibold">0.0</span>
+</div>
+<div class="flex justify-between p-3 hover:bg-white/5 transition-colors">
+<span class="">Tuz (g)</span>
+<span class="font-semibold">0.0</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BREWING GUIDE -->
+<section class="bg-forest py-section-padding border-t border-gold/10 overflow-hidden relative" id="demleme">
+<div class="absolute inset-0 bg-gradient-to-r from-forest via-surface-container to-forest opacity-50 pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center mb-20 space-y-4 reveal">
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-gold">İdeal Türk Çayı Demleme Önerisi</h2>
+<div class="w-24 h-[1px] bg-gold/50 mx-auto"></div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto pt-4">Kusursuz demi yakalamak için ustaların tavsiyesi.</p>
+</div>
+<!-- Timeline -->
+<div class="relative">
+<!-- Connecting line -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-gold/20 -translate-y-1/2 z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center space-y-6 reveal">
+<div class="w-16 h-16 rounded-full bg-forest border-2 border-gold flex items-center justify-center text-gold shadow-[0_0_20px_rgba(201,169,97,0.2)]">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<div class="space-y-2">
+<span class="font-label-md text-label-md text-gold/60 uppercase tracking-widest">1. Adım</span>
+<p class="font-body-md text-body-md text-on-background">Kireçsiz taze suyu alt haznede kaynatın.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center space-y-6 reveal delay-100">
+<div class="w-16 h-16 rounded-full bg-forest border-2 border-gold flex items-center justify-center text-gold shadow-[0_0_20px_rgba(201,169,97,0.2)]">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div class="space-y-2">
+<span class="font-label-md text-label-md text-gold/60 uppercase tracking-widest">2. Adım</span>
+<p class="font-body-md text-body-md text-on-background">Üst demliğe kişi başı 2 tatlı kaşığı çay ekleyin. Üzerine kaynamış suyu dairesel hareketlerle gezdirin.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center space-y-6 reveal delay-200">
+<div class="w-16 h-16 rounded-full bg-forest border-2 border-gold flex items-center justify-center text-gold shadow-[0_0_20px_rgba(201,169,97,0.2)]">
+<span class="material-symbols-outlined">timer</span>
+</div>
+<div class="space-y-2">
+<span class="font-label-md text-label-md text-gold/60 uppercase tracking-widest">3. Adım</span>
+<p class="font-body-md text-body-md text-on-background">Kısık ateşte alt hazne kaynarken 15-20 dakika demlemeye bırakın.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center space-y-6 reveal delay-300">
+<div class="w-16 h-16 rounded-full bg-forest border-2 border-gold flex items-center justify-center text-gold shadow-[0_0_20px_rgba(201,169,97,0.2)]">
+<span class="material-symbols-outlined">local_cafe</span>
+</div>
+<div class="space-y-2">
+<span class="font-label-md text-label-md text-gold/60 uppercase tracking-widest">4. Adım</span>
+<p class="font-body-md text-body-md text-on-background">Çayınız hazır. Aromasını kaybetmemesi için yarım saat içinde taze tüketin.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT/ORDER -->
+<section class="bg-forest py-section-padding border-y border-gold/20" id="kurumsal"><div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-12 items-center"><div class="space-y-6"><h2 class="font-headline-xl text-gold">Kurumsal Çözümler</h2><p class="font-body-lg text-on-background/80">Kafe, restoran ve oteller (Horeca) için özel harmanlanmış paketleme seçenekleri ve toptan fiyat avantajlarımızla işletmenize değer katıyoruz.</p><ul class="space-y-4 text-on-surface-variant"><li class="flex items-center gap-3"><span class="material-symbols-outlined text-gold">check_circle</span> Özel Horeca Paketleme</li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-gold">check_circle</span> Toptan Fiyat Avantajları</li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-gold">check_circle</span> Düzenli Tedarik Garantisi</li></ul><a class="inline-block border border-gold text-gold px-8 py-3 rounded hover:bg-gold hover:text-forest transition-all" href="https://wa.me/905318581834" target="_blank">Teklif Alın</a></div><div class="glass-panel p-8 rounded border border-gold/10 bg-gold/5"><span class="material-symbols-outlined text-gold text-6xl mb-4">apartment</span><h3 class="font-headline-lg text-on-background mb-2">İşletmeniz İçin En İyisi</h3><p class="font-body-md text-on-surface-variant">Müşterilerinize gerçek bir çay deneyimi sunmak için bizimle iletişime geçin.</p></div></div></section><section class="bg-surface-container py-section-padding text-center relative leaf-pattern" id="siparis">
+<div class="max-w-2xl mx-auto px-margin-mobile md:px-margin-desktop space-y-10 reveal">
+<span class="material-symbols-outlined text-gold text-5xl opacity-50">forum</span>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-background">Sohbete Bizimle Devam Edin</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Sipariş vermek, ürünlerimiz hakkında bilgi almak veya sadece çay üzerine muhabbet etmek için bize ulaşabilirsiniz.</p>
+<div class="pt-8">
+<a class="inline-flex items-center gap-3 bg-gold text-forest font-label-md text-label-md px-10 py-5 rounded hover:bg-[#ebd08f] transition-all duration-300 shadow-[0_4px_20px_rgba(201,169,97,0.15)] hover:shadow-[0_4px_25px_rgba(201,169,97,0.3)] hover:-translate-y-1 text-lg" href="https://wa.me/905318581834" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+                        WhatsApp Üzerinden İletişime Geçin
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-dim dark:bg-surface-container-lowest w-full py-section-padding border-t border-primary/10">
+<div class="flex flex-col items-center text-center px-margin-desktop space-y-12 max-w-container-max mx-auto">
+<div class="font-headline-xl text-headline-xl text-gold">
+                Selase Hilal Çay
+            </div>
+<div class="space-y-2">
+<p class="font-body-md text-body-md text-on-surface-variant font-semibold">Selase Hilal Gıda Turizm İnşaat Sanayi ve Tic. Ltd. Şti.</p>
+<p class="font-body-md text-body-md text-on-surface-variant/60">Üsküdar / İstanbul</p>
+<p class="font-body-md text-body-md text-on-surface-variant/60 text-sm mt-4 border border-gold/10 inline-block px-4 py-2 rounded">Türk Gıda Kodeksi Çay Tebliği'ne uygun olarak üretilmiştir.</p>
+</div>
+<nav class="flex flex-wrap justify-center gap-6 pt-8 border-t border-gold/10 w-full max-w-2xl">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-gold transition-colors opacity-80 hover:opacity-100" href="#">Kullanım Koşulları</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-gold transition-colors opacity-80 hover:opacity-100" href="#">Gizlilik Politikası</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-gold transition-colors opacity-80 hover:opacity-100" href="#">Mesafeli Satış Sözleşmesi</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-gold transition-colors opacity-80 hover:opacity-100" href="https://wa.me/905318581834" rel="noopener noreferrer" target="_blank">İletişim</a>
+</nav>
+<div class="flex gap-4 pt-4">
+<a class="text-on-surface-variant/60 hover:text-gold transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="text-on-surface-variant/60 hover:text-gold transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant/40 text-sm pt-8">
+                © 2024 Selase Hilal Çay. Tüm Hakları Saklıdır.
+            </p>
+</div>
+</footer>
+<script class="">
+        // Simple scroll reveal animation observer
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+
+            const revealOnScroll = () => {
+                for (let i =</script>
+
+</body></html>
